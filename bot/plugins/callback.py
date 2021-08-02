@@ -1742,7 +1742,7 @@ async def callback_data(bot, update: CallbackQuery):
         reply_markup = InlineKeyboardMarkup(buttons)
  
         await update.message.edit_text(
-            Translation.FILESTORE_TEXT,
+            Translation.FILESHARE_TEXT,
             reply_markup=reply_markup,
             parse_mode="html"
         )
