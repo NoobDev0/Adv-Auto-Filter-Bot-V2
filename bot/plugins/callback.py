@@ -1639,13 +1639,14 @@ async def callback_data(bot, update: CallbackQuery):
 
     if query_data == "start":
         buttons = [[
-            InlineKeyboardButton('My Dev 👨‍🔬', url='https://t.me/AlbertEinstein_TG'),
-            InlineKeyboardButton('Source Code 🧾', url ='https://github.com/CrazyBotsz/Adv-Filter-Bot-V2')
+            InlineKeyboardButton('Help', callback_data='help')
         ],[
-            InlineKeyboardButton('Support 🛠', url='https://t.me/CrazyBotszGrp')
+            InlineKeyboardButton('Channel', url ='https://t.me/aska2zmovies'),
+            InlineKeyboardButton('Group', url='https://t.me/AskA2ZMoviez')
         ],[
-            InlineKeyboardButton('Help ⚙', callback_data="help")
-        ]]
+            InlineKeyboardButton('Updates', url='https://t.me/WhatTheCinema'),
+            InlineKeyboardButton('Source', callback_data="source")
+          ]
     
         reply_markup = InlineKeyboardMarkup(buttons)
         
@@ -1659,11 +1660,14 @@ async def callback_data(bot, update: CallbackQuery):
 
     elif query_data == "help":
         buttons = [[
-            InlineKeyboardButton('Home ⚡', callback_data='start'),
-            InlineKeyboardButton('About 🚩', callback_data='about')
+            InlineKeyboardButton('Vc Player', callback_data='vcplayer'),
+            InlineKeyboardButton('Filter', callback_data='filter')
         ],[
-            InlineKeyboardButton('Close 🔐', callback_data='close')
-        ]]
+            InlineKeyboardButton('Auto Filter', callback_data='autofilter'),
+            InlineKeyboardButton('File Store', callback_data='filestore')
+        ],[
+            InlineKeyboardButton('About', callback_data='about')
+          ]]
     
         reply_markup = InlineKeyboardMarkup(buttons)
         
