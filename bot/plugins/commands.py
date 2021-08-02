@@ -81,6 +81,8 @@ async def help(bot, update):
     ],[
         InlineKeyboardButton('UFilters', callback_data='filter'),
         InlineKeyboardButton('File Store', callback_data='filestore')
+    ],[
+        InlineKeyboardButton('About', callback_data='about')
     ]]
     
     reply_markup = InlineKeyboardMarkup(buttons)
