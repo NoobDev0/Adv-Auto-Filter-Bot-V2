@@ -6,13 +6,10 @@ from pyrogram import filters, Client
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
 from bot import Translation, LOGGER # pylint: disable=import-error
 from bot.database import Database # pylint: disable=import-error
-import asyncio
-from pyrogram.errors import FloodWait
-from bot.bot import Bot
-from bot import ADMINS, OWNER_ID, DISABLE_CHANNEL_BUTTON
-from helper_func import encode, decode, get_messages
+ 
 
 db = Database()
+
 
 @Client.on_message(filters.command(["start"]) & filters.private, group=1)
 async def start(bot, update):
