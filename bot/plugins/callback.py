@@ -1693,6 +1693,73 @@ async def callback_data(bot, update: CallbackQuery):
             parse_mode="html"
         )
 
+    elif query_data == 'autofilter':
+        buttons = [[
+            InlineKeyboardButton('Back', callback_data='help'),
+            InlineKeyboardButton('Close', callback_data='close')
+        ]]
+
+        reply_markup = InlineKeyboardMarkup(buttons)
+
+        await update.message.edit_text(
+            Translation.AUTOFILTER_TEXT,
+            reply_markup=reply_markup,
+            parse_mode="html"
+        )
+    elif query_data == "vcplayer":
+        buttons = [[
+            InlineKeyboardButton('Back', callback_data='help'),
+            InlineKeyboardButton('Close', callback_data='close')
+        ]]
+
+        reply_markup = InlineKeyboardMarkup(buttons)
+
+        await update.message.edit_text(
+            Translation.VCPLAYER_TEXT,
+            reply_markup=reply_markup,
+            parse_mode="html"
+        )
+    elif query_data == "filter":
+        buttons = [[
+            InlineKeyboardButton('Back', callback_data='help'),
+            InlineKeyboardButton('Close', callback_data='close')
+        ]]
+
+        reply_markup = InlineKeyboardMarkup(buttons)
+
+        await update.message.edit_text(
+            Translation.FILTER_TEXT,
+            reply_markup=reply_markup,
+            parse_mode="html"
+        )
+
+    elif query_data == "filestore":
+        buttons = [[
+            InlineKeyboardButton('Back', callback_data='help'),
+            InlineKeyboardButton('Close', callback_data='close')
+        ]]
+
+        reply_markup = InlineKeyboardMarkup(buttons)
+ 
+        await update.message.edit_text(
+            Translation.FILESTORE_TEXT,
+            reply_markup=reply_markup,
+            parse_mode="html"
+        )
+
+    elif query_data == "source":
+        buttons = [[
+            InlineKeyboardButton('Back', callback_data='help'),
+            InlineKeyboardButton('Close', callback_data='close')
+        ]]
+
+        reply_markup = InlineKeyboardMarkup(buttons)
+
+        await update.message.edit_text(
+            Translation.SOURCE_TEXT,
+            reply_markup=reply_markup,
+            parse_mode="html"
+        )
 
     elif query_data == "close":
         await update.message.delete()
