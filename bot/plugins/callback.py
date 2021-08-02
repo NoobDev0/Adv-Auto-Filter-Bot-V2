@@ -1646,7 +1646,7 @@ async def callback_data(bot, update: CallbackQuery):
         ],[
             InlineKeyboardButton('Updates', url='https://t.me/WhatTheCinema'),
             InlineKeyboardButton('Source', callback_data="source")
-          ]
+        ]]
     
         reply_markup = InlineKeyboardMarkup(buttons)
         
@@ -1667,8 +1667,8 @@ async def callback_data(bot, update: CallbackQuery):
             InlineKeyboardButton('File Store', callback_data='filestore')
         ],[
             InlineKeyboardButton('About', callback_data='about')
-          ]]
-    
+        ]]
+   
         reply_markup = InlineKeyboardMarkup(buttons)
         
         await update.message.edit_text(
