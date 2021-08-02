@@ -1690,7 +1690,8 @@ async def callback_data(bot, update: CallbackQuery):
         await update.message.edit_text(
             Translation.ABOUT_TEXT.format(update.from_user.mention),
             reply_markup=reply_markup,
-            parse_mode="html"
+            parse_mode="html",
+            disable_web_page_preview=True
         )
 
     elif query_data == 'autofilter':
@@ -1704,8 +1705,10 @@ async def callback_data(bot, update: CallbackQuery):
         await update.message.edit_text(
             Translation.AUTOFILTER_TEXT.format(update.from_user.mention),
             reply_markup=reply_markup,
-            parse_mode="html"
+            parse_mode="html",
+            disable_web_page_preview=True
         )
+
     elif query_data == "vcplayer":
         buttons = [[
             InlineKeyboardButton('Back', callback_data='help'),
@@ -1717,8 +1720,10 @@ async def callback_data(bot, update: CallbackQuery):
         await update.message.edit_text(
             Translation.VCPLAYER_TEXT.format(update.from_user.mention),
             reply_markup=reply_markup,
-            parse_mode="html"
+            parse_mode="html",
+            disable_web_page_preview=True
         )
+
     elif query_data == "filter":
         buttons = [[
             InlineKeyboardButton('Back', callback_data='help'),
@@ -1730,7 +1735,8 @@ async def callback_data(bot, update: CallbackQuery):
         await update.message.edit_text(
             Translation.FILTER_TEXT.format(update.from_user.mention),
             reply_markup=reply_markup,
-            parse_mode="html"
+            parse_mode="html",
+            disable_web_page_preview=True
         )
 
     elif query_data == "filestore":
@@ -1744,7 +1750,8 @@ async def callback_data(bot, update: CallbackQuery):
         await update.message.edit_text(
             Translation.FILESHARE_TEXT.format(update.from_user.mention),
             reply_markup=reply_markup,
-            parse_mode="html"
+            parse_mode="html",
+            disable_web_page_preview=True
         )
 
     elif query_data == "source":
@@ -1758,7 +1765,8 @@ async def callback_data(bot, update: CallbackQuery):
         await update.message.edit_text(
             Translation.SOURCE_TEXT.format(update.from_user.mention),
             reply_markup=reply_markup,
-            parse_mode="html"
+            parse_mode="html",
+            disable_web_page_preview=True
         )
 
     elif query_data == "close":
