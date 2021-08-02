@@ -76,13 +76,13 @@ async def start(bot, update):
 @Client.on_message(filters.command(["help"]) & filters.private, group=1)
 async def help(bot, update):
     buttons = [[
-        InlineKeyboardButton('Auto Filter', callback_data='autofilter'),
-        InlineKeyboardButton('Vc Player 🚩', callback_data='vcplayer')
+        InlineKeyboardButton('Auto Filter', callback_data = "autofilter"),
+        InlineKeyboardButton('Vc Player 🚩', callback_data = "vcplayer")
     ],[
-        InlineKeyboardButton('UFilters', callback_data='filter'),
-        InlineKeyboardButton('File Store', callback_data='filestore')
+        InlineKeyboardButton('UFilters', callback_data = "filter"),
+        InlineKeyboardButton('File Store', callback_data = "filestore")
     ],[
-        InlineKeyboardButton('About', callback_data='about')
+        InlineKeyboardButton('About', callback_data = "about")
     ]]
     
     reply_markup = InlineKeyboardMarkup(buttons)
@@ -96,29 +96,11 @@ async def help(bot, update):
     )
 
 
-@Client.on_message(filters.command(["about"]) & filters.private, group=1)
-async def about(bot, update):
-    
-    buttons = [[
-        InlineKeyboardButton('Home ⚡', callback_data='start'),
-        InlineKeyboardButton('Close 🔐', callback_data='close')
-    ]]
-    reply_markup = InlineKeyboardMarkup(buttons)
-    
-    await bot.send_message(
-        chat_id=update.chat.id,
-        text=Translation.ABOUT_TEXT,
-        reply_markup=reply_markup,
-        disable_web_page_preview=True,
-        parse_mode="html",
-        reply_to_message_id=update.message_id
-    )
-
 @Client.on_message(filters.text & ~ filters.command(["start","help","batch","genlink","cccurrent","userbotjoinchannel","channelplay","play","dplay","splay","player","skip","pause","resume","end","current","playlist","cresume","cplayer","cplaylist","cdplay","unset","csplay","cplay","pmpermit","gcast","userbotleaveall","userbotjoin","admincache","remall","rem","viewfilters","filter","info","set","sets","id","status"]) & filters.private & ~ filters.me)
 async def note(bot, update):
     buttons = [[
         InlineKeyboardButton('🏡𝙼𝙰𝙸𝙽 𝙲𝙷𝙰𝙽𝙽𝙴𝙻', url='https://t.me/MoviE_LinkS_0nlY'),
-        InlineKeyboardButton('📽️𝙼𝙾𝚅𝙸𝙴 𝙲𝙷𝙰𝙽𝙽𝙴𝙻', url ='https://t.me/BoX_0fFiCe')
+        InlineKeyboardButton('📽️𝙼𝙾𝚅𝙸𝙴 𝙲𝙷𝙰𝙽𝙽𝙴𝙻', url='https://t.me/BoX_0fFiCe')
     ],[
         InlineKeyboardButton('🤔𝙷𝙾𝚆 𝚃𝙾 𝚁𝙴𝚀?', url='https://t.me/MoviE_LinkS_0nlY/5')
     ],[
