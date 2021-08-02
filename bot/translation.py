@@ -64,3 +64,16 @@ Check DaisyXMusic Bot for More Commands
 """
     AUTOFILTER_TEXT = """There's Nothig Special in this
 """
+    REQ_IN_PM = """Hey Chum Thanks For Using Me!
+Don't Request Your Movie Here Request In @AskA2ZMoviez 
+"""
+    SOURCE_TEXT = """Inspired From,
+
+CodeXBotsz
+
+TroJanZheX
+
+AlbertEinstein_TG 
+
+DaisyXMusic 
+"""
