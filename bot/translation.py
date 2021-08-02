@@ -56,3 +56,41 @@ For More Details Click Help Button Below..
 
 <b>➥ Source Code</b> : <i><a href="https://github.com/AlbertEinsteinTG/Adv-Auto-Filter-Bot">Click Me</a></i>
 """
+    FILESHARE_TEXT = """𝗙𝗜𝗟𝗘 𝗦𝗛𝗔𝗥𝗘 𝗛𝗘𝗟𝗣 
+
+  File share stores files in channel as a database and gets you the files in your pm through links with multiple files support Here are the available commands   
+  
+
+▪️/batch - uses to send multiple files with one link 
+
+▪️/genlink - send a file(or any) to bots pm from database channel  and reply to that file with /genlink for creating a permanent link for that file
+"""
+    VCPLAYER_TEXT = """VOICE CHAT HELP
+
+Check DaisyXMusic Bot for More Commands
+"""
+    FILTER_TEXT = """𝗙𝗜𝗟𝗧𝗘𝗥 𝗛𝗘𝗟𝗣 
+
+ Here Is the available commands in filter
+
+
+▪️/filter - for saving a filter works like a normal for filter so.. no tutorial 
+
+▪️/rem - for deleting a filter 
+
+▪️/remall - for deleting all filters (think twice before doing it) 
+
+▪️/viewfilters - list all saved filters 
+
+▪️/set - for connecting into pm 
+
+▪️/sets - view/manage connected groups 
+
+▪️/unset - disconnect a chat from connection 
+
+▪️/info - gives information about given user 
+
+▪️/id - get user id
+"""
+    AUTOFILTER_TEXT = """wait a sec
+"""
