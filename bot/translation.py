@@ -92,5 +92,5 @@ Check DaisyXMusic Bot for More Commands
 
 ▪️/id - get user id
 """
-    AUTOFILTER_TEXT = """wait a sec
+    AUTOFILTER_TEXT = """There's Nothig Special in this
 """
