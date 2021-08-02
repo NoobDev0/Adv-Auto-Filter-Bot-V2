@@ -1639,13 +1639,13 @@ async def callback_data(bot, update: CallbackQuery):
 
     if query_data == "start":
         buttons = [[
-            InlineKeyboardButton('Help', callback_data='help')
+            InlineKeyboardButton('Help', callback_data = "help")
         ],[
             InlineKeyboardButton('Channel', url ='https://t.me/aska2zmovies'),
             InlineKeyboardButton('Group', url='https://t.me/AskA2ZMoviez')
         ],[
             InlineKeyboardButton('Updates', url='https://t.me/WhatTheCinema'),
-            InlineKeyboardButton('Source', callback_data="source")
+            InlineKeyboardButton('Source', callback_data = "source")
         ]]
     
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -1660,13 +1660,13 @@ async def callback_data(bot, update: CallbackQuery):
 
     elif query_data == "help":
         buttons = [[
-            InlineKeyboardButton('Vc Player 🔱', callback_data='vcplayer'),
-            InlineKeyboardButton('Filter➿', callback_data='filter')
+            InlineKeyboardButton('Vc Player 🔱', callback_data = "vcplayer"),
+            InlineKeyboardButton('Filter➿', callback_data = "filter")
         ],[
-            InlineKeyboardButton('Auto Filter', callback_data='autofilter'),
-            InlineKeyboardButton('File Store', callback_data='filestore')
+            InlineKeyboardButton('Auto Filter', callback_data = "autofilter"),
+            InlineKeyboardButton('File Store', callback_data = "filestore")
         ],[
-            InlineKeyboardButton('About', callback_data='about')
+            InlineKeyboardButton('About', callback_data = "about")
         ]]
    
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -1681,8 +1681,8 @@ async def callback_data(bot, update: CallbackQuery):
 
     elif query_data == "about": 
         buttons = [[
-            InlineKeyboardButton('Home ⚡', callback_data='start'),
-            InlineKeyboardButton('Close 🔐', callback_data='close')
+            InlineKeyboardButton('Home ⚡', callback_data = "start"),
+            InlineKeyboardButton('Close 🔐', callback_data = "close")
         ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -1696,8 +1696,8 @@ async def callback_data(bot, update: CallbackQuery):
 
     elif query_data == 'autofilter':
         buttons = [[
-            InlineKeyboardButton('Back', callback_data='help'),
-            InlineKeyboardButton('Close', callback_data='close')
+            InlineKeyboardButton('Back', callback_data = "help"),
+            InlineKeyboardButton('Close', callback_data = "close")
         ]]
 
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -1711,8 +1711,8 @@ async def callback_data(bot, update: CallbackQuery):
 
     elif query_data == "vcplayer":
         buttons = [[
-            InlineKeyboardButton('Back', callback_data='help'),
-            InlineKeyboardButton('Close', callback_data='close')
+            InlineKeyboardButton('Back', callback_data = "help"),
+            InlineKeyboardButton('Close', callback_data = "close")
         ]]
 
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -1726,8 +1726,8 @@ async def callback_data(bot, update: CallbackQuery):
 
     elif query_data == "filter":
         buttons = [[
-            InlineKeyboardButton('Back', callback_data='help'),
-            InlineKeyboardButton('Close', callback_data='close')
+            InlineKeyboardButton('Back', callback_data = "help"),
+            InlineKeyboardButton('Close', callback_data = "close")
         ]]
 
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -1741,8 +1741,8 @@ async def callback_data(bot, update: CallbackQuery):
 
     elif query_data == "filestore":
         buttons = [[
-            InlineKeyboardButton('Back', callback_data='help'),
-            InlineKeyboardButton('Close', callback_data='close')
+            InlineKeyboardButton('Back', callback_data = "help"),
+            InlineKeyboardButton('Close', callback_data = "close")
         ]]
 
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -1756,8 +1756,8 @@ async def callback_data(bot, update: CallbackQuery):
 
     elif query_data == "source":
         buttons = [[
-            InlineKeyboardButton('Back', callback_data='help'),
-            InlineKeyboardButton('Close', callback_data='close')
+            InlineKeyboardButton('Back', callback_data = "help"),
+            InlineKeyboardButton('Close', callback_data = "close")
         ]]
 
         reply_markup = InlineKeyboardMarkup(buttons)
