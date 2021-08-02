@@ -1660,8 +1660,8 @@ async def callback_data(bot, update: CallbackQuery):
 
     elif query_data == "help":
         buttons = [[
-            InlineKeyboardButton('Vc Player', callback_data='vcplayer'),
-            InlineKeyboardButton('Filter', callback_data='filter')
+            InlineKeyboardButton('Vc Player 🔱', callback_data='vcplayer'),
+            InlineKeyboardButton('Filter➿', callback_data='filter')
         ],[
             InlineKeyboardButton('Auto Filter', callback_data='autofilter'),
             InlineKeyboardButton('File Store', callback_data='filestore')
