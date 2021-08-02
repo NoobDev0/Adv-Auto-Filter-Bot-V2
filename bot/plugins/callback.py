@@ -1672,7 +1672,7 @@ async def callback_data(bot, update: CallbackQuery):
         reply_markup = InlineKeyboardMarkup(buttons)
         
         await update.message.edit_text(
-            Translation.HELP_TEXT,
+            Translation.HELP_TEXT.format(update.from_user.mention),
             reply_markup=reply_markup,
             parse_mode="html",
             disable_web_page_preview=True
@@ -1688,7 +1688,7 @@ async def callback_data(bot, update: CallbackQuery):
         reply_markup = InlineKeyboardMarkup(buttons)
         
         await update.message.edit_text(
-            Translation.ABOUT_TEXT,
+            Translation.ABOUT_TEXT.format(update.from_user.mention),
             reply_markup=reply_markup,
             parse_mode="html"
         )
@@ -1702,7 +1702,7 @@ async def callback_data(bot, update: CallbackQuery):
         reply_markup = InlineKeyboardMarkup(buttons)
 
         await update.message.edit_text(
-            Translation.AUTOFILTER_TEXT,
+            Translation.AUTOFILTER_TEXT.format(update.from_user.mention),
             reply_markup=reply_markup,
             parse_mode="html"
         )
@@ -1715,7 +1715,7 @@ async def callback_data(bot, update: CallbackQuery):
         reply_markup = InlineKeyboardMarkup(buttons)
 
         await update.message.edit_text(
-            Translation.VCPLAYER_TEXT,
+            Translation.VCPLAYER_TEXT.format(update.from_user.mention),
             reply_markup=reply_markup,
             parse_mode="html"
         )
@@ -1728,7 +1728,7 @@ async def callback_data(bot, update: CallbackQuery):
         reply_markup = InlineKeyboardMarkup(buttons)
 
         await update.message.edit_text(
-            Translation.FILTER_TEXT,
+            Translation.FILTER_TEXT.format(update.from_user.mention),
             reply_markup=reply_markup,
             parse_mode="html"
         )
@@ -1742,7 +1742,7 @@ async def callback_data(bot, update: CallbackQuery):
         reply_markup = InlineKeyboardMarkup(buttons)
  
         await update.message.edit_text(
-            Translation.FILESHARE_TEXT,
+            Translation.FILESHARE_TEXT.format(update.from_user.mention),
             reply_markup=reply_markup,
             parse_mode="html"
         )
@@ -1756,7 +1756,7 @@ async def callback_data(bot, update: CallbackQuery):
         reply_markup = InlineKeyboardMarkup(buttons)
 
         await update.message.edit_text(
-            Translation.SOURCE_TEXT,
+            Translation.SOURCE_TEXT.format(update.from_user.mention),
             reply_markup=reply_markup,
             parse_mode="html"
         )
