@@ -79,7 +79,7 @@ Check Out this Article For More Info About Commands!
     REQ_IN_PM = """<b>Hey Chum Thanks For Using Me!</b>
 <i>Don't Request Your Movie Here Request In @Cinema_Haunter!
 
-Our Official Channel - 
+Our Official Channel - @CinemaHaunter
 """
     SOURCE_TEXT = """Given Here Are the Repositories That I Used In Making These Powers
 
@@ -92,5 +92,6 @@ Repo: <a href="https://github.com/TroJanzHEX/Unlimited-Filter-Bot/">REPO</a>
 𝗙𝗜𝗟𝗘 𝗦𝗧𝗢𝗥𝗘
 Repo: <a href="https://github.com/CodeXBotz/File-Sharing-Bot/">REPO</a>
 
-DaisyXMusic 
+𝗩𝗖 𝗣𝗟𝗔𝗬𝗘𝗥
+Repo: <a href="https://github.com/TeamDaisyX/DaisyXMusic/">REPO</a>
 """
