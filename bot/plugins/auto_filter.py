@@ -129,7 +129,24 @@ async def auto_filter(bot, update):
             )
         
     else:
-        return # return if no files found for that query
+        send_msg = await bot.send_message( 
+        chat_id = update.chat.id, 
+        text=f"Damn Bruh! Unfortunately We Couldn't Find This Movie! Make Sure That Your Spelling Is Correct. If Not, Check In Google! 😅 Also Check Out The Rules!", 
+        parse_mode="html", 
+        reply_to_message_id=update.message_id, 
+        reply_markup=InlineKeyboardMarkup( 
+            [ 
+                [ 
+                   InlineKeyboardButton('Check Spelling 🔎', url=f"http://google.com/search?q={G_SEARCH}")
+                ],
+                [ 
+                   InlineKeyboardButton('Rules 🚫', callback_data = "lol")
+                ] 
+            ] 
+        )
+    )
+        await asyncio.sleep(7) 
+        await send_msg.delete()
     
 
     if len(results) == 0: # double check
@@ -289,3 +306,11 @@ async def recacher(group_id, ReCacheInvite=True, ReCacheActive=False, bot=Bot, u
             ACTIVE_CHATS[str(group_id)] = achatId
     return 
 
+@Client.on_callback_query()
+async def cb_handlerss(client: Client , query: CallbackQuery): 
+    data = query.data 
+    if data == "lol": 
+        await query.answer( 
+            "Must Follow...!\n\nTenet movie send me ❌ \nTenet movie keep bro ❌ \nTenet movie plz ❌ \nTenet 2020 ✔\nTenet 2020 tel ✔\n\nCheck Your Spelling By Checking It In *Google* 😑 If Your Movie Name is Incorrect🤷 \nIf Your Movie Name is Correct, Tag The Admins.", 
+            show_alert=True
+     )
