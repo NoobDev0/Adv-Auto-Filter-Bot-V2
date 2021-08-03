@@ -75,6 +75,8 @@ Vc Player Plays Music In Groups And Channels! 🎧
 """
     REQ_IN_PM = """<b>Hey Chum Thanks For Using Me!</b>
 <i>Don't Request Your Movie Here Request In @Cinema_Haunter!
+
+Our Official Channel - 
 """
     SOURCE_TEXT = """Given Here Are the Repositories That I Used
 
