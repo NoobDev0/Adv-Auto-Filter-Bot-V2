@@ -7,8 +7,8 @@ class Translation(object):
     START_TEXT = """<u><b>Hey {}!!</b></u>
 <i>What's Up '<b>Film Buff!</b>'🎬</i>\n\n ᴀᴍ ᴊᴜsᴛ ᴀ ᴀᴅᴠᴀɴᴄᴇ ᴀᴜᴛᴏ ꜰɪʟᴛᴇʀ ʙᴏᴛ.... ᴡɪᴛʜ ᴍᴀɴʏ ᴘᴏᴡᴇʀs!🔥
  
-<b>ɪ ᴀᴍ ʙᴀʏᴍᴀx ᴀɴᴅ ɪ ᴀᴍ ᴄʀᴇᴀᴛᴇᴅ ᴛᴏ sᴇʀᴠᴇ <u>ᗩՏK ᗩ TO ᘔ ᗰOᐯIᗴՏ</u></b>🎊 
-🎭<i>Click The <b>Help</b> To See And Unlock My Full Potential! \n<i>Join Our Official Channel</i>
+<b>ɪ ᴀᴍ ᴄʀᴇᴀᴛᴇᴅ ᴛᴏ sᴇʀᴠᴇ <u>ᗩՏK ᗩ TO ᘔ ᗰOᐯIᗴՏ</u></b>🎊 
+🎭Click The <b>Help</b> To See And Unlock My Full Potential! \n<i>Join Our Official Channel</i>
 @CinemaHaunter 
 </i>"""    
     
