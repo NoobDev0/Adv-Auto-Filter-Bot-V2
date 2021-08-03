@@ -4,27 +4,28 @@
 
 class Translation(object):
     
-    START_TEXT = """<b>Hey {}!!</b>
-<i>Am Just A Advance Auto Filter Bot....😉
+    START_TEXT = """<u><b>Hey {}!!</b></u>
+<i>What's Up '<b>Film Buff!</b>'🎬</i>\n\n ᴀᴍ ᴊᴜsᴛ ᴀ ᴀᴅᴠᴀɴᴄᴇ ᴀᴜᴛᴏ ꜰɪʟᴛᴇʀ ʙᴏᴛ.... ᴡɪᴛʜ ᴍᴀɴʏ ᴘᴏᴡᴇʀs!🔥
+ 
+<b>ɪ ᴀᴍ ʙᴀʏᴍᴀx ᴀɴᴅ ɪ ᴀᴍ ᴄʀᴇᴀᴛᴇᴅ ᴛᴏ sᴇʀᴠᴇ <u>ᗩՏK ᗩ TO ᘔ ᗰOᐯIᗴՏ</u></b>🎊 
+🎭<i>Click The <b>Help</b> To See Nad Unlock My Full Potential 
 
-Just Add Me To Your Group And Channel And Connect Them And See My Pevers 🔥🔥😝
-
-For More Details Click Help Button Below..
-@CrazyBotsz
+</i>Join Our Official Channel
+@CinemaHaunter 
 </i>"""    
     
-    HELP_TEXT = """Given Below Are the Various Features of me
+    HELP_TEXT = """<b>Given Below are Some Features of me</b>
 """
     
-    ABOUT_TEXT = """<b>➥ Name</b> : <code> Auto Filter Bot</code>
-    
-<b>➥ Creator</b> : <b><i><a href="https://t.me/AlbertEinstein_TG">AlbertEinstein_TG</a></i></b>
+    ABOUT_TEXT = """<b>➥ Name</b> : <code> Auto Filter Bot</code>   
+
+<b>➥ Creator</b> : <b><i><a href="https://t.me/JonasKhanwaldTG">Jonas</a></i></b>
 
 <b>➥ Language</b> : <code>Python3</code>
 
 <b>➥ Library</b> : <i><a href="https://docs.pyrogram.org">Pyrogram Asyncio 1.13.0 </a></i>
 
-<b>➥ Source Code</b> : <i><a href="https://github.com/AlbertEinsteinTG/Adv-Auto-Filter-Bot">Click Me</a></i>
+<b>➥ Source Code</b> : <i><a href="https://telegra.ph/file/21d3243265c04d0f27f1e.jpg">Click Me</a></i>
 """
     FILESHARE_TEXT = """𝗙𝗜𝗟𝗘 𝗦𝗛𝗔𝗥𝗘 𝗛𝗘𝗟𝗣 
 
