@@ -21,7 +21,14 @@ DB_URI = os.environ.get("DB_URI")
 
 USER_SESSION = os.environ.get("USER_SESSION")
 
-ADMINS = os.environ.get("ADMINS")
+#ADMINS = os.environ.get("ADMINS")
+
+try:
+    ADMINS=[]
+    for x in (os.environ.get("ADMINS", "").split()):
+        ADMINS.append(int(x))
+except ValueError:
+        raise Exception("Your Admins list does not contain valid integers.")
 
 VERIFY = {}
 
