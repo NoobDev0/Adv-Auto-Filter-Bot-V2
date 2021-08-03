@@ -84,9 +84,10 @@ Our Official Channel -
     SOURCE_TEXT = """Given Here Are the Repositories That I Used In Making These Powers
 
 𝗔𝗨𝗧𝗢 𝗙𝗜𝗟𝗧𝗘𝗥
-Repo: <a href="https://github.com/AlbertEinsteinTG/Adv-Auto-Filter-Bot-V2/"
+Repo: <a href="https://github.com/AlbertEinsteinTG/Adv-Auto-Filter-Bot-V2/">REPO</a>
 
-TroJanZheX
+𝗨𝗡𝗟𝗜𝗠𝗜𝗧𝗘𝗗 𝗙𝗜𝗟𝗧𝗘𝗥
+Repo: 
 
 AlbertEinstein_TG 
 
