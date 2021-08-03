@@ -106,12 +106,12 @@ async def help(bot, update):
 @Client.on_message(filters.text & ~ filters.command(["start","help","batch","genlink","cccurrent","userbotjoinchannel","channelplay","play","dplay","splay","player","skip","pause","resume","end","current","playlist","cresume","cplayer","cplaylist","cdplay","unset","csplay","cplay","pmpermit","gcast","userbotleaveall","userbotjoin","admincache","remall","rem","viewfilters","filter","info","set","sets","id","status"]) & filters.private & ~ filters.me)
 async def note(bot, update):
     buttons = [[
-        InlineKeyboardButton('🏡 𝕄𝕒𝕚𝕟 𝕔𝕙𝕒𝕟𝕟𝕖𝕝', url='https://t.me/CinemaHaunter),
-        InlineKeyboardButton('📽️ 𝔾𝕣𝕠𝕦𝕡', url='https://t.me/Cinema_Haunter)
+        InlineKeyboardButton('🏡 𝕄𝕒𝕚𝕟 𝕔𝕙𝕒𝕟𝕟𝕖𝕝', url="https://t.me/CinemaHaunter"),
+        InlineKeyboardButton('📽️ 𝔾𝕣𝕠𝕦𝕡', url="https://t.me/Cinema_Haunter")
     ],[
-        InlineKeyboardButton('🤔 ℍ𝕠𝕨 𝕥𝕠 ℝ𝕖𝕢?', url='https://t.me/aska2zmovies/4')
+        InlineKeyboardButton('🤔 ℍ𝕠𝕨 𝕥𝕠 ℝ𝕖𝕢?', url="https://t.me/aska2zmovies/4")
     ],[
-        InlineKeyboardButton('𝕊𝕙𝕒𝕣𝕖 𝕋𝕠 𝕐𝕠𝕦𝕣 𝔽𝕣𝕚𝕖𝕟𝕕𝕤 😍', url='https://t.me/share/url?url=https://t.me/Cinema_Haunter)
+        InlineKeyboardButton('𝕊𝕙𝕒𝕣𝕖 𝕋𝕠 𝕐𝕠𝕦𝕣 𝔽𝕣𝕚𝕖𝕟𝕕𝕤 😍', url="https://t.me/share/url?url=https://t.me/Cinema_Haunter")
   
     ]]
     
