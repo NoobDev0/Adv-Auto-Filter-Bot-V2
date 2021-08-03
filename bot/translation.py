@@ -43,6 +43,9 @@ class Translation(object):
     VCPLAYER_TEXT = """VOICE CHAT HELP
 
 Vc Player Plays Music In Groups And Channels! 🎧
+Check Out this Article For More Info About Commands!
+
+<a href="https://telegra.ph/The-Help-07-30">Daisy X Music Commands </a>
 
 @CinemaHaunter 
 """
@@ -78,9 +81,10 @@ Vc Player Plays Music In Groups And Channels! 🎧
 
 Our Official Channel - 
 """
-    SOURCE_TEXT = """Given Here Are the Repositories That I Used
+    SOURCE_TEXT = """Given Here Are the Repositories That I Used In Making These Powers
 
-CodeXBotsz
+𝗔𝗨𝗧𝗢 𝗙𝗜𝗟𝗧𝗘𝗥
+Repo: <a href="https://github.com/AlbertEinsteinTG/Adv-Auto-Filter-Bot-V2/"
 
 TroJanZheX
 
