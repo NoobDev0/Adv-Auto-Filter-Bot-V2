@@ -42,7 +42,7 @@ async def start(bot, update):
                         [
                             InlineKeyboardButton
                                 (
-                                    'Developers', url="https://t.me/CrazyBotsz"
+                                    'Share 😐', url="https://t.me/share/url?url=https://t.me/Cinema_Haunter"
                                 )
                         ]
                     ]
@@ -66,11 +66,11 @@ async def start(bot, update):
                     InlineKeyboardButton("⚙️𝙷𝙴𝙻𝙿", callback_data = "help")
                 ],
                 [
-                    InlineKeyboardButton('🏘️𝙶𝚁𝙾𝚄𝙿', url='https://t.me/mv_mania'),
-                    InlineKeyboardButton('🎬𝙲𝙷𝙰𝙽𝙽𝙴𝙻', url='https://t.me/BoX_0fFiCe')
+                    InlineKeyboardButton('🏘️𝙶𝚁𝙾𝚄𝙿', url='https://t.me/Cinema_Haunter),
+                    InlineKeyboardButton('🎬𝙲𝙷𝙰𝙽𝙽𝙴𝙻', url='https://t.me/CinemaHaunter)
                 ],
                 [
-                    InlineKeyboardButton('🔎𝚄𝙿𝙳𝙰𝚃𝙴𝚂', url='https://t.me/MoviE_LinkS_0nlY'),
+                    InlineKeyboardButton('🔎𝚄𝙿𝙳𝙰𝚃𝙴𝚂', url='https://t.me/WhatTheCinema),
                     InlineKeyboardButton('🗃️𝚂𝙾𝚄𝚁𝙲𝙴', callback_data = "source")
                 ]
             ]
