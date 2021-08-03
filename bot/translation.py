@@ -87,9 +87,10 @@ Our Official Channel -
 Repo: <a href="https://github.com/AlbertEinsteinTG/Adv-Auto-Filter-Bot-V2/">REPO</a>
 
 𝗨𝗡𝗟𝗜𝗠𝗜𝗧𝗘𝗗 𝗙𝗜𝗟𝗧𝗘𝗥
-Repo: 
+Repo: <a href="https://github.com/TroJanzHEX/Unlimited-Filter-Bot/">REPO</a>
 
-AlbertEinstein_TG 
+𝗙𝗜𝗟𝗘 𝗦𝗧𝗢𝗥𝗘
+Repo: <a href="https://github.com/CodeXBotz/File-Sharing-Bot/">REPO</a>
 
 DaisyXMusic 
 """
