@@ -14,7 +14,9 @@ class Translation(object):
 @CinemaHaunter 
 </i>"""    
     
-    HELP_TEXT = """<b>Given Below are Some Features of me</b>
+    HELP_TEXT = """⚡<b>Given Below are Some Features With Which You Mess Me</b>⚡
+
+@CinemaHaunter
 """
     
     ABOUT_TEXT = """<b>➥ Name</b> : <code> Auto Filter Bot</code>   
@@ -35,10 +37,14 @@ class Translation(object):
 ▪️/batch - uses to send multiple files with one link 
 
 ▪️/genlink - send a file(or any) to bots pm from database channel  and reply to that file with /genlink for creating a permanent link for that file
+
+@CinemaHaunter 
 """
     VCPLAYER_TEXT = """VOICE CHAT HELP
 
-Check DaisyXMusic Bot for More Commands
+Vc Player Plays Music In Groups And Channels! 🎧
+
+@CinemaHaunter 
 """
     FILTER_TEXT = """𝗙𝗜𝗟𝗧𝗘𝗥 𝗛𝗘𝗟𝗣 
 
@@ -62,13 +68,15 @@ Check DaisyXMusic Bot for More Commands
 ▪️/info - gives information about given user 
 
 ▪️/id - get user id
+
+@CinemaHaunter 
 """
     AUTOFILTER_TEXT = """There's Nothig Special in this
 """
-    REQ_IN_PM = """Hey Chum Thanks For Using Me!
-Don't Request Your Movie Here Request In @AskA2ZMoviez 
+    REQ_IN_PM = """<b>Hey Chum Thanks For Using Me!</b>
+<i>Don't Request Your Movie Here Request In @Cinema_Haunter!
 """
-    SOURCE_TEXT = """Inspired From,
+    SOURCE_TEXT = """Given Here Are the Repositories That I Used
 
 CodeXBotsz
 
