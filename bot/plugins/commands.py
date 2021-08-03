@@ -63,15 +63,15 @@ async def start(bot, update):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("⚙️𝙷𝙴𝙻𝙿", callback_data = "help")
+                    InlineKeyboardButton("⚙️ℍ𝕖𝕝𝕡", callback_data = "help")
                 ],
                 [
-                    InlineKeyboardButton('🏘️𝙶𝚁𝙾𝚄𝙿', url='https://t.me/Cinema_Haunter),
-                    InlineKeyboardButton('🎬𝙲𝙷𝙰𝙽𝙽𝙴𝙻', url='https://t.me/CinemaHaunter)
+                    InlineKeyboardButton('🏘️𝔾𝕣𝕠𝕦𝕡', url='https://t.me/Cinema_Haunter),
+                    InlineKeyboardButton('🎬ℂ𝕙𝕒𝕟𝕟𝕖𝕝', url='https://t.me/CinemaHaunter)
                 ],
                 [
-                    InlineKeyboardButton('🔎𝚄𝙿𝙳𝙰𝚃𝙴𝚂', url='https://t.me/WhatTheCinema),
-                    InlineKeyboardButton('🗃️𝚂𝙾𝚄𝚁𝙲𝙴', callback_data = "source")
+                    InlineKeyboardButton('🔎𝕌𝕡𝕕𝕒𝕥𝕖𝕤', url='https://t.me/WhatTheCinema),
+                    InlineKeyboardButton('🗃️𝕊𝕠𝕦𝕣𝕔𝕖', callback_data = "source")
                 ]
             ]
         ), 
@@ -83,13 +83,13 @@ async def start(bot, update):
 @Client.on_message(filters.command(["help"]) & filters.private, group=1)
 async def help(bot, update):
     buttons = [[
-        InlineKeyboardButton('Auto Filter', callback_data = "autofilter"),
-        InlineKeyboardButton('Vc Player 🚩', callback_data = "vcplayer")
+        InlineKeyboardButton('𝔸𝕦𝕥𝕠 𝔽𝕚𝕝𝕥𝕖𝕣', callback_data = "autofilter"),
+        InlineKeyboardButton('𝕍𝕔 ℙ𝕝𝕒𝕪𝕖𝕣', callback_data = "vcplayer")
     ],[
-        InlineKeyboardButton('UFilters', callback_data = "filter"),
-        InlineKeyboardButton('File Store', callback_data = "filestore")
+        InlineKeyboardButton('𝕌𝕟𝕝𝕚𝕞𝕚𝕥𝕖𝕕 𝔽𝕚𝕝𝕥𝕖𝕣', callback_data = "filter"),
+        InlineKeyboardButton('𝔽𝕚𝕝𝕖 𝕊𝕥𝕠𝕣𝕖', callback_data = "filestore")
     ],[
-        InlineKeyboardButton('About', callback_data = "about")
+        InlineKeyboardButton('𝔸𝕓𝕠𝕦𝕥', callback_data = "about")
     ]]
     
     reply_markup = InlineKeyboardMarkup(buttons)
