@@ -66,11 +66,11 @@ async def start(bot, update):
                     InlineKeyboardButton("⚙️ℍ𝕖𝕝𝕡", callback_data = "help")
                 ],
                 [
-                    InlineKeyboardButton('🏘️𝔾𝕣𝕠𝕦𝕡', url='https://t.me/Cinema_Haunter),
-                    InlineKeyboardButton('🎬ℂ𝕙𝕒𝕟𝕟𝕖𝕝', url='https://t.me/CinemaHaunter)
+                    InlineKeyboardButton('🏘️𝔾𝕣𝕠𝕦𝕡', url="https://t.me/Cinema_Haunter"),
+                    InlineKeyboardButton('🎬ℂ𝕙𝕒𝕟𝕟𝕖𝕝', url="https://t.me/CinemaHaunter")
                 ],
                 [
-                    InlineKeyboardButton('🔎𝕌𝕡𝕕𝕒𝕥𝕖𝕤', url='https://t.me/WhatTheCinema),
+                    InlineKeyboardButton('🔎𝕌𝕡𝕕𝕒𝕥𝕖𝕤', url="https://t.me/WhatTheCinema"),
                     InlineKeyboardButton('🗃️𝕊𝕠𝕦𝕣𝕔𝕖', callback_data = "source")
                 ]
             ]
