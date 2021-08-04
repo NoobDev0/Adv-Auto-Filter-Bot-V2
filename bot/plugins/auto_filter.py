@@ -126,7 +126,7 @@ async def auto_filter(bot, update):
             results.append(
                 [
                     InlineKeyboardButton(button_text, url=file_link),
-                    InlineKeyboardButton(sizeee_text, url=file_link)
+                    InlineKeyboardButton(sizeee_text, callback_data = "givensize")
                 ]
             )
         
@@ -314,5 +314,15 @@ async def cb_handlerss(client: Client , query: CallbackQuery):
     if data == "lol": 
         await query.answer( 
             "Must Follow...!\n\nTenet movie send me ❌ \nTenet movie keep bro ❌ \nTenet movie plz ❌ \nTenet 2020 ✔\nTenet 2020 tel ✔\n\nCheck Your Spelling By Checking It In *Google* 😑 If Your Movie Name is Incorrect🤷 \nIf Your Movie Name is Correct, Tag The Admins.", 
+            show_alert=True
+     )
+
+
+@Client.on_callback_query()
+async def cb_handlerss(client: Client , query: CallbackQuery): 
+    data = query.data 
+    if data == "givensize": 
+        await query.answer( 
+            "Click The Respective File Name Bruh!", 
             show_alert=True
      )
