@@ -12,7 +12,7 @@ class Translation(object):
 @CinemaHaunter 
 </i>"""    
     
-    HELP_TEXT = """⚡<b>Given Below are Some Features With Which You Mess Me</b>⚡
+    HELP_TEXT = """⚡<b>Given Below are Some Features With Which You Can Mess Me</b>⚡
 
 @CinemaHaunter
 """
