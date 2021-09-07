@@ -229,10 +229,6 @@ async def auto_filter(bot, update):
 
         try:  
             split = PTN.parse(KEY_WORD)
-            if split["season"]:
-                split.pop("season")
-            if split["episode"]:
-                split.pop("episode")
             KEY = split["title"]
     
             url = "https://movie-database-imdb-alternative.p.rapidapi.com/"
