@@ -227,9 +227,16 @@ async def auto_filter(bot, update):
             
         reply_markup = InlineKeyboardMarkup(result[0])
 
-        try:          
+        try:  
+            split = PTN.parse(KEY)
+            if split["season"]:
+                split.pop("season")
+            if split["episode"]:
+                split.pop("episode")
+            KEY = split["title"]
+    
             url = "https://movie-database-imdb-alternative.p.rapidapi.com/"
-            querystring = {"s":KEY_WORD,"page":"1","r":"json"}
+            querystring = {"s":KEY,"page":"1","r":"json"}
             headers = {
                 'x-rapidapi-host': "movie-database-imdb-alternative.p.rapidapi.com",
                 'x-rapidapi-key': "c25ac23bc1mshecf589f21bf76f7p13698bjsn2b030cd03517"
