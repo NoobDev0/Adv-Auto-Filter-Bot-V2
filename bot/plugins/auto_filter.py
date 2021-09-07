@@ -5,6 +5,7 @@ import asyncio
 #imdb module
 import requests
 import json
+import PTN
 
 from pyrogram import Client, filters
 from pyrogram.types import Message, InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
@@ -252,19 +253,19 @@ async def auto_filter(bot, update):
             if gets.get("Response") == "True":
                 await bot.send_message(
                     chat_id = update.chat.id,
+                    text=f"",
+                    reply_markup=reply_markup,
+                    parse_mode="html",
+                    reply_to_message_id=update.message_id
+                )
+            else:
+                await bot.send_message(
+                    chat_id = update.chat.id,
                     text=f"🛡 Join And Share Our Official Channel @CinemaHaunter 🛡 Found {(len_results)} Results For Your Request: <code>{query}</code>",
                     reply_markup=reply_markup,
                     parse_mode="html",
                     reply_to_message_id=update.message_id
                 )
-
-            await bot.send_message(
-                chat_id = update.chat.id,
-                text=f"🛡 Join And Share Our Official Channel @CinemaHaunter 🛡 Found {(len_results)} Results For Your Request: <code>{query}</code>",
-                reply_markup=reply_markup,
-                parse_mode="html",
-                reply_to_message_id=update.message_id
-            )
 
         except ButtonDataInvalid:
             print(result[0])
