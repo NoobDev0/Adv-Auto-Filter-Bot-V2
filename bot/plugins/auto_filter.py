@@ -26,7 +26,6 @@ async def auto_filter(bot, update):
     A Funtion To Handle Incoming Text And Reply With Appropriate Results
     """
 
-    global imdb_iid
     KEY_WORD = update.text 
     G_SEARCH = re.sub(r' ', '+', f'{KEY_WORD}') 
     group_id = update.chat.id
@@ -240,9 +239,8 @@ async def auto_filter(bot, update):
                 }
             response = requests.request("GET", url, headers=headers, params=querystring)
             id = json.loads(response.text)
-            if id.get("Response") == "True":
-                ids = id.get("Search")[0]
-                imdb_iid = ids.get("imdbID")
+            ids = id.get("Search")[0]
+            imdb_iid = ids.get("imdbID")
             link = "https://www.omdbapi.com/?apikey=1625aff3"
             parameters = {"i":imdb_iid,"r":"json"}
             details = requests.request("GET", link, params=parameters)
