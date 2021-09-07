@@ -2,6 +2,10 @@ import re
 import logging
 import asyncio
 
+#imdb module
+import requests
+import json
+
 from pyrogram import Client, filters
 from pyrogram.types import Message, InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
 from pyrogram.errors import ButtonDataInvalid, FloodWait
