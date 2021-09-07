@@ -260,7 +260,7 @@ async def auto_filter(bot, update):
             if gets.get("Response") == "True":
                 await bot.send_message(
                     chat_id = update.chat.id,
-                    text=f"🎬 Movie/Series : <code>{movie}</code> /n🔥 Released : <code>{year}</code> /n💫 Rating : {rating} /n🎭 Genre : {genre} /n✔ Rated : {rated} /n/n📺 Plot : {plot} /n @Cinema_Haunter",
+                    text=f"🎬 Movie/Series : <code>{movie}</code> /n🔥 Released : <code>{year}</code> /n💫 Rating : <code>{rating}</code> /n🎭 Genre : <code>{genre}</code> /n✔ Rated : <code>{rated}</code> /n/n📺 Plot : <code>{plot}<code> /n@Cinema_Haunter",
                     reply_markup=reply_markup,
                     parse_mode="html",
                     reply_to_message_id=update.message_id
