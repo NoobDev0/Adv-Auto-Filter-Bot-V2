@@ -228,7 +228,7 @@ async def auto_filter(bot, update):
         reply_markup = InlineKeyboardMarkup(result[0])
 
         try:  
-            split = PTN.parse(KEY)
+            split = PTN.parse(KEY_WORD)
             if split["season"]:
                 split.pop("season")
             if split["episode"]:
