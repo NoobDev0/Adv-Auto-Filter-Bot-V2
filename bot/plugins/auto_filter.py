@@ -241,9 +241,9 @@ async def auto_filter(bot, update):
             id = json.loads(response.text)
             if id.get("Response") == "True":
                 ids = id.get("Search")[0]
-                imdb_id = ids.get("imdbID")
+                imdb_iid = ids.get("imdbID")
             link = "https://www.omdbapi.com/?apikey=1625aff3"
-            parameters = {"i":imdb_id,"r":"json"}
+            parameters = {"i":imdb_iid,"r":"json"}
             details = requests.request("GET", link, params=parameters)
             gets = json.loads(details.text)
             movie = gets.get("Title")
