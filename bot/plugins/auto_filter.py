@@ -235,6 +235,7 @@ async def auto_filter(bot, update):
                 }
             response = requests.request("GET", url, headers=headers, params=querystring)
             id = json.loads(response.text)
+            if
             ids = id.get("Search")[0]
             imdb_id = ids.get("imdbID")
             link = "https://www.omdbapi.com/?apikey=1625aff3"
@@ -246,8 +247,8 @@ async def auto_filter(bot, update):
             year = gets.get("Released")
             plot = gets.get("Plot")
             rated = gets.get("Rated")
-genre = gets.get("Genre")
-rating = gets.get("imdbRating")
+            genre = gets.get("Genre")
+            rating = gets.get("imdbRating")
 
             await bot.send_message(
                 chat_id = update.chat.id,
