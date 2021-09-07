@@ -235,20 +235,28 @@ async def auto_filter(bot, update):
                 }
             response = requests.request("GET", url, headers=headers, params=querystring)
             id = json.loads(response.text)
-            if
-            ids = id.get("Search")[0]
-            imdb_id = ids.get("imdbID")
+            if id.get("Response") == "True":
+                ids = id.get("Search")[0]
+                imdb_id = ids.get("imdbID")
             link = "https://www.omdbapi.com/?apikey=1625aff3"
             parameters = {"i":imdb_id,"r":"json"}
             details = requests.request("GET", link, params=parameters)
             gets = json.loads(details.text)
-
             movie = gets.get("Title")
             year = gets.get("Released")
             plot = gets.get("Plot")
             rated = gets.get("Rated")
             genre = gets.get("Genre")
             rating = gets.get("imdbRating")
+           
+            if gets.get("Response") == "True":
+                await bot.send_message(
+                    chat_id = update.chat.id,
+                    text=f"🛡 Join And Share Our Official Channel @CinemaHaunter 🛡 Found {(len_results)} Results For Your Request: <code>{query}</code>",
+                    reply_markup=reply_markup,
+                    parse_mode="html",
+                    reply_to_message_id=update.message_id
+                )
 
             await bot.send_message(
                 chat_id = update.chat.id,
