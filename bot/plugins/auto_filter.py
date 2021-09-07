@@ -26,6 +26,7 @@ async def auto_filter(bot, update):
     A Funtion To Handle Incoming Text And Reply With Appropriate Results
     """
 
+    global imdb_iid
     KEY_WORD = update.text 
     G_SEARCH = re.sub(r' ', '+', f'{KEY_WORD}') 
     group_id = update.chat.id
