@@ -2,6 +2,8 @@ import re
 import logging
 import asyncio
 
+#imdb
+from .omdb import get_details
 
 from pyrogram import Client, filters
 from pyrogram.types import Message, InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
@@ -223,7 +225,7 @@ async def auto_filter(bot, update):
             
         reply_markup = InlineKeyboardMarkup(result[0])
 
-        try:  
+        try: 
             await bot.send_message(
                 chat_id = update.chat.id,
                 text=f"🛡 Join And Share Our Official Channel @CinemaHaunter 🛡 Found {(len_results)} Results For Your Request: <code>{query}</code>",
