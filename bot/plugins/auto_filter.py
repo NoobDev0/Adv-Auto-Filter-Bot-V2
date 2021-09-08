@@ -2,10 +2,6 @@ import re
 import logging
 import asyncio
 
-#imdb module
-import requests
-import json
-import PTN
 
 from pyrogram import Client, filters
 from pyrogram.types import Message, InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
@@ -228,47 +224,13 @@ async def auto_filter(bot, update):
         reply_markup = InlineKeyboardMarkup(result[0])
 
         try:  
-            split = PTN.parse(KEY_WORD)
-            KEY = split["title"]
-    
-            url = "https://movie-database-imdb-alternative.p.rapidapi.com/"
-            querystring = {"s":KEY,"page":"1","r":"json"}
-            headers = {
-                'x-rapidapi-host': "movie-database-imdb-alternative.p.rapidapi.com",
-                'x-rapidapi-key': "c25ac23bc1mshecf589f21bf76f7p13698bjsn2b030cd03517"
-                }
-            response = requests.request("GET", url, headers=headers, params=querystring)
-            id = json.loads(response.text)
-            if id.get("Response") == "True":
-                ids = id.get("Search")[0]
-                imdb_iid = ids.get("imdbID")
-            link = "https://www.omdbapi.com/?apikey=1625aff3"
-            parameters = {"i":imdb_iid,"r":"json"}
-            details = requests.request("GET", link, params=parameters)
-            gets = json.loads(details.text)
-            movie = gets.get("Title")
-            year = gets.get("Released")
-            plot = gets.get("Plot")
-            rated = gets.get("Rated")
-            genre = gets.get("Genre")
-            rating = gets.get("imdbRating")
-           
-            if gets.get("Response") == "True":
-                await bot.send_message(
-                    chat_id = update.chat.id,
-                    text=f"🎬 <b>Movie/Series</b> : <code>{movie}</code> /n🔥 <b>Released</b> : <code>{year}</code> /n💫 <b>Rating</b> : <code>{rating}</code> /n🎭 <b>Genre</b> : <code>{genre}</code> /n✔ <b>Rated</b> : <code>{rated}</code> /n/n📺 <b>Plot</b> : <code>{plot}<code> /n@Cinema_Haunter",
-                    reply_markup=reply_markup,
-                    parse_mode="html",
-                    reply_to_message_id=update.message_id
-                )
-            else:
-                await bot.send_message(
-                    chat_id = update.chat.id,
-                    text=f"🛡 Join And Share Our Official Channel @CinemaHaunter 🛡 Found {(len_results)} Results For Your Request: <code>{query}</code>",
-                    reply_markup=reply_markup,
-                    parse_mode="html",
-                    reply_to_message_id=update.message_id
-                )
+            await bot.send_message(
+                chat_id = update.chat.id,
+                text=f"🛡 Join And Share Our Official Channel @CinemaHaunter 🛡 Found {(len_results)} Results For Your Request: <code>{query}</code>",
+                reply_markup=reply_markup,
+                parse_mode="html",
+                reply_to_message_id=update.message_id
+            )
 
         except ButtonDataInvalid:
             print(result[0])
