@@ -228,14 +228,21 @@ async def auto_filter(bot, update):
         try: 
             dict=await get_details(KEY_WORD)
             if dict:
-            
-            await bot.send_message(
-                chat_id = update.chat.id,
-                text=f"🛡 Join And Share Our Official Channel @CinemaHaunter 🛡 Found {(len_results)} Results For Your Request: <code>{query}</code>",
-                reply_markup=reply_markup,
-                parse_mode="html",
-                reply_to_message_id=update.message_id
-            )
+                await bot.send_message(
+                    chat_id = update.chat.id,
+                    text=f"🎬 <b>Movie/Series</b> : <code>{dict["title"]}</code> /n🔥 <b>Released</b> : <code>{year}</code> /n💫 <b>Rating</b> : <code>{rating}</code> /n🎭 <b>Genre</b> : <code>{genre}</code> /n✔ <b>Rated</b> : <code>{rated}</code> /n/n📺 <b>Plot</b> : <code>{plot}<code> /n@Cinema_Haunter",
+                    reply_markup=reply_markup,
+                    parse_mode="html",
+                    reply_to_message_id=update.message_id
+                )
+            else:
+                await bot.send_message(
+                    chat_id = update.chat.id,
+                    text=f"🛡 Join And Share Our Official Channel @CinemaHaunter 🛡 Found {(len_results)} Results For Your Request: <code>{query}</code>",
+                    reply_markup=reply_markup,
+                    parse_mode="html",
+                    reply_to_message_id=update.message_id
+                )
 
         except ButtonDataInvalid:
             print(result[0])
