@@ -2,6 +2,9 @@ import re
 import time
 import asyncio
 
+#imdb
+from .omdb import get_details
+
 from pyrogram import Client, filters
 from pyrogram.errors import FloodWait, UserNotParticipant
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
