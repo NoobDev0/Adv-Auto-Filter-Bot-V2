@@ -4,6 +4,7 @@ import asyncio
 
 #imdb
 from .omdb import get_details
+from .auto_filter impory KEY_WORD 
 
 from pyrogram import Client, filters
 from pyrogram.errors import FloodWait, UserNotParticipant
@@ -144,8 +145,11 @@ async def cb_navg(bot, update: CallbackQuery):
         achatId = None
     
     reply_markup = InlineKeyboardMarkup(temp_results)
-    
-    text=f"<i>🛡 Join And Share Our Official Channel @CinemaHaunter 🛡 Found</i> <code>{leng}</code> <i>Results For Your Request:</i> <code>{query}</code>"
+    dict=await get_details(KEY_WORD)
+    if dict:
+        text=f"🎬 <b>Movie/Series</b> : <code>{dict["title"]}</code> /n🔥 <b>Released</b> : <code>{dict["year"]}</code> /n💫 <b>Rating</b> : <code>{dict["rating"]}</code> /n🎭 <b>Genre</b> : <code>{dict["genre"]}</code> /n✔ <b>Rated</b> : <code>{dict["rated"]}</code> /n/n📺 <b>Plot</b> : <code>{dict["plot"]}<code> /n <u>@Cinema_Haunter</u>"
+    else:
+        text=f"<i>🛡 Join And Share Our Official Channel @CinemaHaunter 🛡 Found</i> <code>{leng}</code> <i>Results For Your Request:</i> <code>{query}</code>"
         
     try:
         await update.message.edit(
