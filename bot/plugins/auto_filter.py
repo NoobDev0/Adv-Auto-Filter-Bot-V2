@@ -226,6 +226,7 @@ async def auto_filter(bot, update):
         reply_markup = InlineKeyboardMarkup(result[0])
 
         try: 
+            dict=await get_details(KEY_WORD)
             await bot.send_message(
                 chat_id = update.chat.id,
                 text=f"🛡 Join And Share Our Official Channel @CinemaHaunter 🛡 Found {(len_results)} Results For Your Request: <code>{query}</code>",
