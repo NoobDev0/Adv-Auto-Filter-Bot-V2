@@ -227,6 +227,8 @@ async def auto_filter(bot, update):
 
         try: 
             dict=await get_details(KEY_WORD)
+            if dict:
+            
             await bot.send_message(
                 chat_id = update.chat.id,
                 text=f"🛡 Join And Share Our Official Channel @CinemaHaunter 🛡 Found {(len_results)} Results For Your Request: <code>{query}</code>",
