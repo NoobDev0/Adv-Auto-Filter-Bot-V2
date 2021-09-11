@@ -77,11 +77,11 @@ async def auto_filter(bot, update):
             if file_size < 1024:
                 file_size = f"[{file_size} B]"
             elif file_size < (1024**2):
-                file_size = f"[{str(round(file_size/1024, 2))} KB] "
+                file_size = "𝖲𝗎𝖻𝗍𝗂𝗍𝗅𝖾"
             elif file_size < (1024**3):
-                file_size = f"[{str(round(file_size/(1024**2), 2))} MB] "
+                file_size = f"[{str(round(file_size/(1024**2), 2))} Mb] "
             elif file_size < (1024**4):
-                file_size = f"[{str(round(file_size/(1024**3), 2))} GB] "
+                file_size = f"[{str(round(file_size/(1024**3), 2))} 𝖦𝖻] "
             
             
             file_size = "" if file_size == ("[0 B]") else file_size
@@ -136,7 +136,7 @@ async def auto_filter(bot, update):
     else:
         send_msg = await bot.send_message( 
         chat_id = update.chat.id, 
-        text=f"<b>Check</b> If There Is A <u>Typo</u> In Your Request.", 
+        text=f"<b>Check</b> If There Is A <u>Typo</u> In Your Request./n𝗧𝘆𝗽𝗼 is a grammatical error", 
         parse_mode="html", 
         reply_to_message_id=update.message_id, 
         reply_markup=InlineKeyboardMarkup( 
