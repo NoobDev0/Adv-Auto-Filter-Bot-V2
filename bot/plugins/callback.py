@@ -146,8 +146,14 @@ async def cb_navg(bot, update: CallbackQuery):
     
     reply_markup = InlineKeyboardMarkup(temp_results)
     dict=await get_details(KEY_WORD)
+    ttlee=dict["title"]
+    yarr=dict["year"]
+    rtingg=dict["rating"]
+    gnree=dict["genre"]
+    rtedd=dict["rated"]
+    pott=dict["plot"]
     if dict:
-        text=f"🎬 <b>Movie/Series</b> : <code>{dict["title"]}</code> /n🔥 <b>Released</b> : <code>{dict["year"]}</code> /n💫 <b>Rating</b> : <code>{dict["rating"]}</code> /n🎭 <b>Genre</b> : <code>{dict["genre"]}</code> /n✔ <b>Rated</b> : <code>{dict["rated"]}</code> /n/n📺 <b>Plot</b> : <code>{dict["plot"]}<code> /n <u>@Cinema_Haunter</u>"
+        text=f"🎬 Movie/Series</b> : <code>{ttlee}</code> /n🔥 <b>Released</b> : <code>{yarr}</code> /n💫 <b>Rating</b> : <code>{rtingg}</code> /n🎭 <b>Genre</b> : <code>{gnree}</code> /n✔ <b>Rated</b> : <code>{rtedd}</code> /n📺 <b>Plot</b> : <code>{pott}<code> /n <u>@Cinema_Haunter</u>"
     else:
         text=f"<i>🛡 Join And Share Our Official Channel @CinemaHaunter 🛡 Found</i> <code>{leng}</code> <i>Results For Your Request:</i> <code>{query}</code>"
         
