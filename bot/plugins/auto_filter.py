@@ -75,7 +75,7 @@ async def auto_filter(bot, update):
             # from B to MiB
             
             if file_size < 1024:
-                file_size = f"[{file_size} B]"
+                file_size = "𝖲𝗎𝖻𝗍𝗂𝗍𝗅𝖾"
             elif file_size < (1024**2):
                 file_size = "𝖲𝗎𝖻𝗍𝗂𝗍𝗅𝖾"
             elif file_size < (1024**3):
