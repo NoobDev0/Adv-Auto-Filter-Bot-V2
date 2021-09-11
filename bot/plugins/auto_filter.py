@@ -227,7 +227,7 @@ async def auto_filter(bot, update):
 
         try: 
             dict=await get_details(KEY_WORD)
-            titlee=dict["title]
+            titlee=dict["title"]
             yearr=dict["year"]
             ratingg=dict["rating"]
             genree=dict["genre"]
