@@ -4,7 +4,7 @@ import asyncio
 
 #imdb
 from .omdb import get_details
-from .auto_filter impory KEY_WORD 
+from .auto_filter import KEY_WORD 
 
 from pyrogram import Client, filters
 from pyrogram.errors import FloodWait, UserNotParticipant
