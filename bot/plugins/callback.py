@@ -4,7 +4,7 @@ import asyncio
 
 #imdb
 from bot.plugins.omdb import get_details
-from bot.plugins.auto_filter import KEY_WORD 
+from bot.plugins.auto_filter import MOVIE
 
 from pyrogram import Client, filters
 from pyrogram.errors import FloodWait, UserNotParticipant
@@ -145,7 +145,7 @@ async def cb_navg(bot, update: CallbackQuery):
         achatId = None
     
     reply_markup = InlineKeyboardMarkup(temp_results)
-    dict=await get_details(KEY_WORD)
+    dict=await get_details(MOVIE)
     ttlee=dict["title"]
     yarr=dict["year"]
     rtingg=dict["rating"]
