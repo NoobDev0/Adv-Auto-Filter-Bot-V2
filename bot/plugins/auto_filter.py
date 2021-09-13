@@ -12,7 +12,7 @@ from pyrogram.errors import ButtonDataInvalid, FloodWait
 from bot.database import Database # pylint: disable=import-error
 from bot.bot import Bot # pylint: disable=import-error
 
-
+MOVIE = ""
 FIND = {}
 INVITE_LINK = {}
 ACTIVE_CHATS = {}
@@ -23,7 +23,7 @@ async def auto_filter(bot, update):
     """
     A Funtion To Handle Incoming Text And Reply With Appropriate Results
     """
-
+    
     KEY_WORD = update.text 
     G_SEARCH = re.sub(r' ', '+', f'{KEY_WORD}') 
     group_id = update.chat.id
