@@ -240,7 +240,7 @@ async def auto_filter(bot, update):
                 info=f"🛡 Join And Share Our Official Channel @CinemaHaunter 🛡 Found {(len_results)} Results For Your Request: <code>{query}</code>",
             await bot.send_message(
                     chat_id = update.chat.id,
-                    text=f"🎬 <b>Movie/Series</b> : <code>{titlee}</code> /n🔥 <b>Released</b> : <code>{yearr}</code> /n💫 <b>Rating</b> : <code>{ratingg}</code> /n🎭 <b>Genre</b> : <code>{genree}</code> /n✔ <b>Rated</b> : <code>{ratedd}</code> /n📺 <b>Plot</b> : <code>{plott}<code> /n <u>@Cinema_Haunter</u>",
+                    text=info,
                     reply_markup=reply_markup,
                     parse_mode="html",
                     reply_to_message_id=update.message_id
