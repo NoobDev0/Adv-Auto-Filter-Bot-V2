@@ -25,6 +25,7 @@ async def auto_filter(bot, update):
     """
     
     KEY_WORD = update.text 
+    MOVIE = "{x}".format(x = KEY_WORD)
     G_SEARCH = re.sub(r' ', '+', f'{KEY_WORD}') 
     group_id = update.chat.id
 
