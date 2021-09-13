@@ -3,8 +3,8 @@ import time
 import asyncio
 
 #imdb
-from .omdb import get_details
-from .auto_filter import KEY_WORD 
+from bot.plugins.omdb import get_details
+from bot.plugins.auto_filter import KEY_WORD 
 
 from pyrogram import Client, filters
 from pyrogram.errors import FloodWait, UserNotParticipant
