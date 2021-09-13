@@ -3,7 +3,7 @@ import logging
 import asyncio
 
 #imdb
-from .omdb import get_details
+from bot.plugins.omdb import get_details
 
 from pyrogram import Client, filters
 from pyrogram.types import Message, InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
