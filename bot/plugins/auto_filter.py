@@ -137,7 +137,7 @@ async def auto_filter(bot, update):
     else:
         send_msg = await bot.send_message( 
         chat_id = update.chat.id, 
-        text=f"<b>Check</b> If There Is A <u>Typo</u> In Your Request./n𝗧𝘆𝗽𝗼 is a grammatical error", 
+        text=f"<b>Check</b> If There Is A <u>Typo</u> In Your Request /n𝗧𝘆𝗽𝗼 is a grammatical error", 
         parse_mode="html", 
         reply_to_message_id=update.message_id, 
         reply_markup=InlineKeyboardMarkup( 
