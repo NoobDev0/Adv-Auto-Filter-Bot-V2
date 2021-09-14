@@ -9,7 +9,7 @@ def get_details(movie):
     KEY = split["title"]
     
     ia = imdb.IMDb()
-    movie = ia.search_movie("Money Heist")
+    movie = ia.search_movie(KEY)
 
     x = movie[0]
     id = x.movieID
@@ -24,6 +24,8 @@ def get_details(movie):
     rate = rated['data']['certification'][8]
     gen = ', '.join([str(elem) for elem in genre])
     url = info["cover url"]
+    dic = {"title":title,"year":year,"rated":rate,"genre":gen,"rating":rating,"image":url}
+    return dic
 
     
            
