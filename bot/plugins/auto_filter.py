@@ -3,7 +3,7 @@ import logging
 import asyncio
 
 #imdb
-from bot.plugins.omdb import get_details
+from bot.plugins.imdb import get_details
 
 from pyrogram import Client, filters
 from pyrogram.types import Message, InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
@@ -233,7 +233,7 @@ async def auto_filter(bot, update):
             ratingg=dict["rating"]
             genree=dict["genre"]
             ratedd=dict["rated"]
-            plott=dict["plot"]
+            image=dict["url"]
             if dict:
                 info=f"🎬 <b>Movie/Series</b> : <code>{titlee}</code> /n🔥 <b>Released</b> : <code>{yearr}</code> /n💫 <b>Rating</b> : <code>{ratingg}</code> /n🎭 <b>Genre</b> : <code>{genree}</code> /n✔ <b>Rated</b> : <code>{ratedd}</code> /n📺 <b>Plot</b> : <code>{plott}<code> /n <u>@Cinema_Haunter</u>",
             else:
