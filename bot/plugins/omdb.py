@@ -7,14 +7,10 @@ import imdb
 def get_details(movie):
     split = PTN.parse(movie)
     KEY = split["title"]
-    
     ia = imdb.IMDb()
     movie = ia.search_movie(KEY)
-
     x = movie[0]
     id = x.movieID
-    print(id)
-
     info = ia.get_movie(id)
     title = info["title"]
     year = info["year"]
