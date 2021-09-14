@@ -3,7 +3,7 @@ import time
 import asyncio
 
 #imdb
-from bot.plugins.omdb import get_details
+from bot.plugins.imdb import get_details
 from bot.plugins.auto_filter import MOVIE
 
 from pyrogram import Client, filters
@@ -151,9 +151,8 @@ async def cb_navg(bot, update: CallbackQuery):
     rtingg=dict["rating"]
     gnree=dict["genre"]
     rtedd=dict["rated"]
-    pott=dict["plot"]
     if dict:
-        text=f"🎬 Movie/Series</b> : <code>{ttlee}</code> /n🔥 <b>Released</b> : <code>{yarr}</code> /n💫 <b>Rating</b> : <code>{rtingg}</code> /n🎭 <b>Genre</b> : <code>{gnree}</code> /n✔ <b>Rated</b> : <code>{rtedd}</code> /n📺 <b>Plot</b> : <code>{pott}<code> /n <u>@Cinema_Haunter</u>"
+        text=f"🎬 Movie/Series</b> : <code>{ttlee}</code> /n🔥 <b>Released</b> : <code>{yarr}</code> /n💫 <b>Rating</b> : <code>{rtingg}</code> /n🎭 <b>Genre</b> : <code>{gnree}</code> /n✔ <b>Rated</b> : <code>{rtedd}</code> /n <u>@Cinema_Haunter</u>"
     else:
         text=f"<i>🛡 Join And Share Our Official Channel @CinemaHaunter 🛡 Found</i> <code>{leng}</code> <i>Results For Your Request:</i> <code>{query}</code>"
         
