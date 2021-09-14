@@ -3,7 +3,7 @@ import time
 import asyncio
 
 #imdb
-from bot.plugins.imdb import get_details
+from bot.plugins.omdb import get_details
 from bot.plugins.auto_filter import MOVIE
 
 from pyrogram import Client, filters
