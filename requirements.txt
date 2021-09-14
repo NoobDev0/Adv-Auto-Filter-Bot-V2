@@ -5,3 +5,5 @@ Pymongo
 Requests 
 TgCrypto
 parse-torrent-title
+wheel
+IMDbPY
