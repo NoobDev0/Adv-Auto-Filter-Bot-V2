@@ -235,9 +235,13 @@ async def auto_filter(bot, update):
             ratedd=dict["rated"]
             image=dict["url"]
             if dict:
-                info=f"🎬 <b>Movie/Series</b> : <code>{titlee}</code> /n🔥 <b>Released</b> : <code>{yearr}</code> /n💫 <b>Rating</b> : <code>{ratingg}</code> /n🎭 <b>Genre</b> : <code>{genree}</code> /n✔ <b>Rated</b> : <code>{ratedd}</code> /n <u>@Cinema_Haunter</u>",
+                info=f"🎬 <b>Movie/Series</b> : <code>{titlee}</code> /n🔥 <b>Released</b> : <code>{yearr}</code> /n💫 <b>Rating</b> : <code>{ratingg}</code> /n🎭 <b>Genre</b> : <code>{genree}</code> /n✔ <b>Rated</b> : <code>{ratedd}</code> /n <u>@Cinema_Haunter</u>"
             else:
-                info=f"🛡 Join And Share Our Official Channel @CinemaHaunter 🛡 Found {(len_results)} Results For Your Request: <code>{query}</code>",
+                info=f"🛡 Join And Share Our Official Channel @CinemaHaunter 🛡 Found {(len_results)} Results For Your Request: <code>{query}</code>"
+            if url:
+                image=image
+            else:
+                image="https://telegra.ph/file/9d589c04d3db03a9ccb99.jpg"
             await bot.send_photo(
                     photo=image,
                     caption=info,
