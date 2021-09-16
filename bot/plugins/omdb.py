@@ -20,8 +20,8 @@ def get_details(movie):
     rate = rated['data']['certification'][8]
     gen = ', '.join([str(elem) for elem in genre])
     url = info["cover url"]
-    dic = {"title":title,"year":year,"rated":rate,"genre":gen,"rating":rating,"image":url}
-    return dic
+    return {"title":title,"year":year,"rated":rate,"genre":gen,"rating":rating,"image":url}
+    
 
     
            
