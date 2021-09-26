@@ -233,7 +233,7 @@ async def auto_filter(bot, update):
             ratingg=dict["rating"]
             genree=dict["genre"]
             ratedd=dict["rated"]
-            image=dict["url"]
+            image=dict["image"]
             if dict:
                 info=f"🎬 <b>Movie/Series</b> : <code>{titlee}</code> /n🔥 <b>Released</b> : <code>{yearr}</code> /n💫 <b>Rating</b> : <code>{ratingg}</code> /n🎭 <b>Genre</b> : <code>{genree}</code> /n✔ <b>Rated</b> : <code>{ratedd}</code> /n <u>@Cinema_Haunter</u>"
             else:
