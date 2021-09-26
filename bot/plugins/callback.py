@@ -145,7 +145,7 @@ async def cb_navg(bot, update: CallbackQuery):
         achatId = None
     
     reply_markup = InlineKeyboardMarkup(temp_results)
-    dict=await get_details(MOVIE)
+    dict=get_details(MOVIE)
     ttlee=dict["title"]
     yarr=dict["year"]
     rtingg=dict["rating"]
