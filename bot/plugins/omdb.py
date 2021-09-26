@@ -19,10 +19,7 @@ def get_details(movie):
     rated = ia.get_movie_parents_guide(id)
     rate = rated['data']['certification'][8]
     gen = ', '.join([str(elem) for elem in genre])
-    try:
-        url = info["cover url"]
-    except Exception as e:
-        print(e)
+    url = info["cover url"]
     return {"title":title,"year":year,"rated":rate,"genre":gen,"rating":rating,"image":url}
     
 
