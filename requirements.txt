@@ -4,6 +4,6 @@ Pyrogram
 Pymongo
 Requests 
 TgCrypto
-parse-torrent-title
+parse-torrent-name
 wheel
 IMDbPY
