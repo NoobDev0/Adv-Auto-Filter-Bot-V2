@@ -227,7 +227,7 @@ async def auto_filter(bot, update):
         reply_markup = InlineKeyboardMarkup(result[0])
 
         try: 
-            dict=await get_details(KEY_WORD)
+            dict=get_details(KEY_WORD)
             titlee=dict["title"]
             yearr=dict["year"]
             ratingg=dict["rating"]
