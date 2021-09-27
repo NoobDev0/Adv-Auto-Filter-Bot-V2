@@ -6,9 +6,9 @@ import imdb
 
 def get_details(movie):
     split = PTN.parse(movie)
-    KEY = split["title"]
+    Key = split["title"]
     ia = imdb.IMDb()
-    movie = ia.search_movie(KEY)
+    movie = ia.search_movie(Key)
     x = movie[0]
     id = x.movieID
     info = ia.get_movie(id)
@@ -19,7 +19,7 @@ def get_details(movie):
     rated = ia.get_movie_parents_guide(id)
     rate = rated['data']['certification'][8]
     gen = ', '.join([str(elem) for elem in genre])
-    url = info["cover url"]
+    url = info["full-size cover url"]
     return {"title":title,"year":year,"rated":rate,"genre":gen,"rating":rating,"image":url}
     
 
