@@ -16,11 +16,10 @@ def get_details(movie):
     year = info["year"]
     rating = info["rating"]
     genre = info["genres"]
-    rated = ia.get_movie_parents_guide(id)
-    rate = rated['data']['certification'][8]
+    imdblink = "https://m.imdb.com/title/tt{i}".format(i=id)
     gen = ', '.join([str(elem) for elem in genre])
     url = info["full-size cover url"]
-    return {"title":title,"year":year,"rated":rate,"genre":gen,"rating":rating,"image":url}
+    return {"title":title,"year":year,"imdb":imdblink,"genre":gen,"rating":rating,"image":url}
     
 
     
