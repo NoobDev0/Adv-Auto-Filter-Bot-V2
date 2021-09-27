@@ -6,9 +6,9 @@ import imdb
 
 def get_details(movie):
     split = PTN.parse(movie)
-    Key = split["title"]
+    extract = split["title"]
     ia = imdb.IMDb()
-    movie = ia.search_movie(Key)
+    movie = ia.search_movie(extract)
     x = movie[0]
     id = x.movieID
     info = ia.get_movie(id)
