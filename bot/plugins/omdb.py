@@ -21,7 +21,7 @@ def get_details(movie):
     try:
         url = info["full-size cover url"]
     except NameError:
-        url = 
+        url = "https://telegra.ph/file/9d589c04d3db03a9ccb99.jpg"
     return {"title":title,"year":year,"imdb":imdblink,"genre":gen,"rating":rating,"image":url}
     
 
