@@ -18,7 +18,10 @@ def get_details(movie):
     genre = info["genres"]
     imdblink = "https://m.imdb.com/title/tt{i}".format(i=id)
     gen = ', '.join([str(elem) for elem in genre])
-    url = info["full-size cover url"]
+    try:
+        url = info["full-size cover url"]
+    except NameError:
+        url = 
     return {"title":title,"year":year,"imdb":imdblink,"genre":gen,"rating":rating,"image":url}
     
 
