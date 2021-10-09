@@ -27,14 +27,11 @@ class Translation(object):
 
 <b>➥ Source Code</b> : <i><a href="https://telegra.ph/file/21d3243265c04d0f27f1e.jpg">Click Me</a></i>
 """
-    FILESHARE_TEXT = """𝗙𝗜𝗟𝗘 𝗦𝗛𝗔𝗥𝗘 𝗛𝗘𝗟𝗣 
+    FILESHARE_TEXT = """𝗣𝗠 𝗙𝗜𝗟𝗧𝗘𝗥 𝗛𝗘𝗟𝗣 
 
-  File share stores files in channel as a database and gets you the files in your pm through links with multiple files support Here are the available commands   
+  Just Send Your Movie/Series Name to the Bot And It Will send You The Links of The File 
+  Along With The Poster of The Movie/Series!!!   
   
-
-▪️/batch - uses to send multiple files with one link 
-
-▪️/genlink - send a file(or any) to bots pm from database channel  and reply to that file with /genlink for creating a permanent link for that file
 
 @CinemaHaunter 
 """
