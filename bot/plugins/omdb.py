@@ -28,7 +28,7 @@ def get_poster(movie):
     x = movie[0]
     id = x.movieID
     info = ia.get_movie(id)
-    poster=info["full-size cover url]
+    poster = info["full-size cover url"]
     return poster
     
 
