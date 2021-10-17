@@ -232,9 +232,10 @@ async def auto_filter(bot, update):
             yearr=dict["year"]
             ratingg=dict["rating"]
             genree=dict["genre"]
+            llink=dict["imdb"]
             deco=dict["image"]
             if dict:
-                info=f"🎬 <b>Movie/Series</b> : <code>{titlee}</code> /n🔥 <b>Released</b> : <code>{yearr}</code> /n💫 <b>Rating</b> : <code>{ratingg}</code> /n🎭 <b>Genre</b> : <code>{genree}</code> /n <u>@Cinema_Haunter</u>"
+                info=f"🎬 <b>Movie/Series</b> : <code>{titlee}</code> /n🔥 <b>Released</b> : <code>{yearr}</code> /n💫 <b>Rating</b> : <code>{ratingg}</code> /n🎭 <b>Genre</b> : <code>{genree}</code> /n<b>📺 IMDb</b> : <a href={llink}>"{titlee}"</a> <u>@Cinema_Haunter</u>"
             else:
                 info=f"🛡 Join And Share Our Official Channel @CinemaHaunter 🛡 Found {(len_results)} Results For Your Request: <code>{query}</code>"
             if url:
