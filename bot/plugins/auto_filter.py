@@ -233,7 +233,7 @@ async def auto_filter(bot, update):
             ratingg=dict["rating"]
             genree=dict["genre"]
             llink=dict["imdb"]
-            deco=await get_poster(KEY_WORD)
+            deco=get_poster(KEY_WORD)
             if dict:
                 info=f"🎬 <b>Movie/Series</b> : <code>{titlee}</code> /n🔥 <b>Released</b> : <code>{yearr}</code> /n💫 <b>Rating</b> : <code>{ratingg}</code> /n🎭 <b>Genre</b> : <code>{genree}</code> /n<b>📺 IMDb</b> : <a href={llink}>{titlee}</a> /n/n<u>@Cinema_Haunter</u>"
             else:
