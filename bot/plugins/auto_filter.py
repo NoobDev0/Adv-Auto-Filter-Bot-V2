@@ -224,7 +224,7 @@ async def auto_filter(bot, update):
             achatId = None
             
             
-        reply_markup = InlineKeyboardMarkup(result[0])
+        reply = InlineKeyboardMarkup(result[0])
 
         try: 
             dict=get_details(KEY_WORD)
@@ -246,7 +246,7 @@ async def auto_filter(bot, update):
                     photo=image,
                     caption=info,
                     chat_id = update.chat.id,
-                    reply_markup=reply_markup,
+                    reply_markup=reply,
                     parse_mode="html",
                     reply_to_message_id=update.message_id
                )
