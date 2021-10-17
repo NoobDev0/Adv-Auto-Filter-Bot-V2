@@ -18,11 +18,18 @@ def get_details(movie):
     genre = info["genres"]
     imdblink = "https://m.imdb.com/title/tt{i}".format(i=id)
     gen = ', '.join([str(elem) for elem in genre])
-    try:
-        url = info["full-size cover url"]
-    except NameError:
-        url = "https://telegra.ph/file/9d589c04d3db03a9ccb99.jpg"
-    return {"title":title,"year":year,"imdb":imdblink,"genre":gen,"rating":rating,"image":url}
+    return {"title":title,"year":year,"imdb":imdblink,"genre":gen,"rating":rating}
+
+def get_poster(movie):
+    split = PTN.parse(movie)
+    extract = split["title"]
+    ia = imdb.IMDb()
+    movie = ia.search_movie(extract)
+    x = movie[0]
+    id = x.movieID
+    info = ia.get_movie(id)
+    poster=info["full-size cover url]
+    return poster
     
 
     
