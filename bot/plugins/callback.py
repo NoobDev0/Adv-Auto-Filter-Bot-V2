@@ -150,8 +150,9 @@ async def cb_navg(bot, update: CallbackQuery):
     yarr=dict["year"]
     rtingg=dict["rating"]
     gnree=dict["genre"]
+    llink=dict["imdb"]
     if dict:
-        text=f"🎬 <b>Movie/Series</b> : <code>{ttlee}</code> /n🔥 <b>Released</b> : <code>{yarr}</code> /n💫 <b>Rating</b> : <code>{rtingg}</code> /n🎭 <b>Genre</b> : <code>{gnree}</code> /n <u>@Cinema_Haunter</u>"
+        text=f"🎬 <b>Movie/Series</b> : <code>{ttlee}</code> /n🔥 <b>Released</b> : <code>{yarr}</code> /n💫 <b>Rating</b> : <code>{rtingg}</code> /n🎭 <b>Genre</b> : <code>{gnree}</code> /n<b>📺 IMDb</b> : <a href={llink}>"{ttlee}"</a> /n/n<u>@Cinema_Haunter</u>"
     else:
         text=f"<i>🛡 Join And Share Our Official Channel @CinemaHaunter 🛡 Found</i> <code>{leng}</code> <i>Results For Your Request:</i> <code>{query}</code>"
         
