@@ -129,7 +129,7 @@ async def auto_filter(bot, update):
             
             results.append(
                 [
-                    InlineKeyboardButton(button_text, url="https://t.me/Cinema_Haunter"),
+                    InlineKeyboardButton(button_text, url=file_link),
                     InlineKeyboardButton(sizeee_text, callback_data = "givensize")
                 ]
             )
