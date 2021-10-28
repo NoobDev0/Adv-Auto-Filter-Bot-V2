@@ -242,7 +242,7 @@ async def auto_filter(bot, update):
                 image=deco
             else:
                 image="https://telegra.ph/file/9d589c04d3db03a9ccb99.jpg"
-            await bot.send_photo(
+            await bot.reply_photo(
                     photo=image,
                     caption=info,
                     chat_id = update.chat.id,
